@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Fast Press Writer</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Kevin Pes">
+        <meta name="keywords" content="Fast Press Writer gestore blog articoli">
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+    </head>
+    
+    <body>
+        <header>
+            <div id="title">FPW</div>
+        </header>
+        
+        <nav class="nav">
+            <ol>
+                <li><a class="active" href="articoli.html">Articoli</a></li>
+                <li><a href="notizia.html">Notizie</a></li>
+                <li><a href="scriviArticolo.html">Scrivi Articolo</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ol>
+        </nav>
+        
+        <aside class="aside">
+            <br>
+            <h3>Cerca</h3>
+            <input type="text" placeholder="Cerca.."><br>
+            <br>
+
+            <h3>Categorie</h3>
+            Politica<br>
+            Cronaca<br>
+            Esteri<br>
+            Economia<br>
+            Sport<br>
+            Cultura<br>
+            <br>
+
+            <h3>Autori</h3>
+            Pinco Pallino<br>
+            Sara Bianchi<br>
+            Mario Rossi<br>
+            <br>
+        </aside>
+        
+        <div id="divBody">
+            <article>
+                <table>
+                    <caption>
+                        <h2>Articoli:</h2>
+                    </caption>
+                    <thead>
+                        <tr><td>Data</td><td>Titolo</td><td>Modifica</td><td>Cancella</td></tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>01/03/18</td>
+                            <td>Neymar si opera, tre mesi di stop</td>
+                            <td><img title="img_modifica" alt="Modifica" src="img/pencil.png" width="20" height="20"></td>
+                            <td><img title="img_cancella" alt="Cancella" src="img/empty-trash.png" width="20" height="20"></td>
+                        </tr>
+                        <tr>
+                            <td>23/02/18</td>
+                            <td>I pronostici della 26° giornata</td>
+                            <td><img title="img_modifica" alt="Modifica" src="img/pencil.png" width="20" height="20"></td>
+                            <td><img title="img_cancella" alt="Cancella" src="img/empty-trash.png" width="20" height="20"></td>
+                        </tr>
+                        <tr>
+                            <td>18/01/18</td>
+                            <td>Caccia in volo, boati in Lombardia e Vda</td>
+                            <td><img title="img_modifica" alt="Modifica" src="img/pencil.png" width="20" height="20"></td>
+                            <td><img title="img_cancella" alt="Cancella" src="img/empty-trash.png" width="20" height="20"></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <input class="buttonarticle" type="button" value="Nuovo Articolo" onclick="window.location.href='scriviArticolo.html'" />
+            </article>
+
+        </div>
+    </body>
+</html>

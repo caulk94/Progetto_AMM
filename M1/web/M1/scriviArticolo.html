@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Fast Press Writer</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Kevin Pes">
+        <meta name="keywords" content="Fast Press Writer gestore blog articoli">
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+    </head>
+    
+    <body>
+        <header>
+            <div id="title">FPW</div>
+        </header>
+        
+        <nav>
+            <ol>
+                <li><a href="articoli.html">Articoli</a></li>
+                <li><a href="notizia.html">Notizie</a></li>
+                <li><a class="active" href="scriviArticolo.html">Scrivi Articolo</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ol>
+        </nav>
+        
+        <aside>
+            <br><h3>Cerca</h3>
+              <input type="text" placeholder="Cerca.."><br><br>
+
+            <h3>Categorie</h3>
+            Politica<br>
+            Cronaca<br>
+            Esteri<br>
+            Economia<br>
+            Sport<br>
+            Cultura<br><br>
+
+            <h3>Autori</h3>
+            Pinco Pallino<br>
+            Sara Bianchi<br>
+            Mario Rossi<br>
+            <br>
+        </aside>
+        
+        <div id="divBody">
+            <form method="post">
+                <div class="container">
+
+                    <!-- CASELLE DI TESTO -->
+                    <h3>Titolo</h3>
+                    <input type="text" name="titolo"><br>
+                    <h3>Data</h3>
+                    <input type="text" name="data" placeholder="01/01/1990"><br>
+                    <h3>Immagine</h3>
+                    <input type="file" name="foto">                
+                    <h3>Didascalia</h3>
+                    <input type="text" name="didascalia"><br>
+
+                    <!-- CHECKBOX -->
+                    <fieldset>
+                        <legend><h3>Categoria</h3></legend>
+                        <input id="policy" class="casella" type="checkbox" name="policy" value="policy"/> Politica
+                        <br /> 
+                        <input id="chronicle" class="casella" type="checkbox" name="chronicle" value="chronicle"/> Cronaca 
+                        <br />
+                        <input id="foreign" class="casella" type="checkbox" name="foreign" value="foreign"/> Foreign
+                        <br />
+                        <input id="economy" class="casella" type="checkbox" name="economy" value="economy"/> Economy
+                        <br />
+                        <input id="sport" class="casella" type="checkbox" name="sport" value="sport"/> Sport
+                        <br />
+                        <input id="culture" class="casella" type="checkbox" name="culture" value="culture"/> Cultura
+                        <br />
+                    </fieldset>
+
+                    <!-- TEXTAREA -->
+                    <br><h3>Testo</h3>
+                    <textarea name="commento" rows="5" cols="30"></textarea>
+                    <br><br>
+
+                    <!-- SUBMIT -->
+                    <input class="submit" type="button" value="Invia i dati" onclick="window.location.href=''" />
+                    
+                </div>
+              </form>
+        </div>
+    </body>
+</html>

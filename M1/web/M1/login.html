@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Fast Press Writer</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Kevin Pes">
+        <meta name="keywords" content="Fast Press Writer gestore blog articoli">
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+    </head>
+    
+    <body>
+        <header>
+            <div id="title">FPW</div>
+        </header>
+        
+        <nav>
+            <ol>
+                <li><a href="articoli.html">Articoli</a></li>
+                <li><a href="notizia.html">Notizie</a></li>
+                <li><a href="scriviArticolo.html">Scrivi Articolo</a></li>
+                <li><a class="active" href="login.html">Login</a></li>
+            </ol>
+        </nav>
+        
+        <aside>
+            <br>
+            <a href="notizia.html"><h3>Notizie</h3></a>
+            <br>
+        </aside>
+        
+        <div id="divBody">
+            <div id="login">
+                <form method="get" action="servlet.java">
+                    <div class="container">
+                        <h3>Username:</h3><input type="text" placeholder="Enter Username" name="uname" required>
+                        <h3>Password:</h3><input type="text" placeholder="Enter Password" name="psw" required>
+                        
+                        <input class="submit" type="button" value="Login" onclick="window.location.href='articoli.html'" />
+                        
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+    </body>
+</html>
